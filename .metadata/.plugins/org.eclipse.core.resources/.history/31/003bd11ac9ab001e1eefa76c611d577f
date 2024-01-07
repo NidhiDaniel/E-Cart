@@ -1,0 +1,9 @@
+@charset "ISO-8859-1";
+.product-container{
+	width:100%;
+}
+.product-form input,select{
+	width:50%;
+	height: 30px;
+	border-radius:4px;
+}

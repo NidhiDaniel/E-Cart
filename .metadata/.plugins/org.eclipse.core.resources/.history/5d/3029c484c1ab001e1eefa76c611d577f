@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+</head>
+<body>
+	<div class="header">
+	   <h3>Online Shopping</h3>
+		<ul>
+			<li><a href="addproduct.jsp"> Add New Products</a></li>
+			<li><a href="#"> View & Edit Products</a></li>
+			<li><a href="#"> Messages Recieved</a></li>
+			<li><a href="#"> Orders Recieved</a></li>
+			<li><a href="#"> Cancel Orders</a></li>
+			<li><a href="#"> Delivered Orders</a></li>
+			<li><a href="#"> Logout</a></li>
+		</ul>
+
+	</div>
+</body>
+</html>

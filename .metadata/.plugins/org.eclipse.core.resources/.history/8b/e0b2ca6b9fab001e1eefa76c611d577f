@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+body{
+	background: #00ACC1;
+}
+.header{
+	width: auto;
+	height: 50px;
+}
+.header ul li{
+	list-style: none;
+	display: inline-block;
+}

@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container">
+		<div class="left-div">
+			<form action="adduser.jsp" method="post">
+				<input type="text" name="name" placeholder="Enter Name"> 
+				<input type="email"name="email" placeholder="Enter Email">
+				<input type="number" name="mobile" placeholder="Enter your Mobile Number">
+				<select name="security_question">
+					<option>What was your first car?</option>
+					<option>What is your first school?</option>
+					<option>What is your pet name?</option>
+					<option>Who was your best friend?</option>
+				</select> 
+				<input type="text" name="answer" placeholder="Enter Your Answer">
+				<input type="password"
+					name="password" placeholder="Enter Password">  
+				<input type="submit" value="SignUp">
+			</form><br>
+			<a href="">Login</a>
+		</div>
+		<div class="right-div">
+		 <h3>Online Shopping</h3>
+		 <p>Online shopping system is the application that allows users to shop online without going to the shops
+		 to buy them</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ include file="header.jsp" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<link rel="stylesheet" href="./css/home-style.css">
+</head>
+<body>
+<div class="product-view">
+<h3 style="color: white; text-align: center;">Home &nbsp;<i class="fa fa-institution"></i></h3>
+<table>
+<thead>
+		<tr>
+			<th>ID</th>
+			<th>NAME</th>
+			<th>CATEGORY</th>
+			<th><i class="fa fa-inr"></i>PRICE</th>
+			<th>ADD TO CART<i class="fa fa-cart-arrow-down"></i></th>
+		</tr>
+
+</thead>
+
+
+</table>
+</body>
+<%@ include file="footer.jsp" %>
+</html>

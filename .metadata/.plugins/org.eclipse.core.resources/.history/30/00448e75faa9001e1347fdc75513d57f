@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add User</title>
+</head>
+<body>
+	<div class="container">
+		<div class="left-div">
+			<form action="adduser.jsp" method="post">
+				<input type="text" name="name"> <input type="email"
+					name="email"> <select name="security_question">
+					<option>What was your first car?</option>
+					<option>What is your first school?</option>
+					<option>What is your pet name?</option>
+					<option>Who was your best friend?</option>
+				</select> <input type="text" name="answer"> <input type="password"
+					name="password"> <input type="submit" value="SignUp">
+			</form>
+		</div>
+		<div class="right-div"></div>
+	</div>
+</body>
+</html>

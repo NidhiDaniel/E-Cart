@@ -1,0 +1,17 @@
+package com.db.connection;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import com.mysql.cj.jdbc.Driver;
+
+public class DAOConnection {
+   public static void getConnection() {
+	   try {
+		DriverManager.registerDriver(new Driver());
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306","root","admin");
+	} catch (Exception e) {
+		// TODO: handle exception
+	}
+   }
+}

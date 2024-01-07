@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+.product-view {
+	background: #f5f5f5;
+}
+.product-view table {
+	width: -webkit-fill-available;
+}
+.product-view table tr{
+	text-align: center;
+}
+.success-msg{
+	color:#FBC02D;
+	text-align:center;
+	font-size: 20px;
+	font-weight: 600;
+}
+.failure-msg{
+	color:#C62828;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}

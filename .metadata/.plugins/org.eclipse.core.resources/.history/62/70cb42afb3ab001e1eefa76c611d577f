@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@include file="adminheader.jsp"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/admin-home.css">
+</head>
+<body>
+	<div class="product-container">
+		<div class="product-form">
+			<label>Enter Name</label><input type="text" name="name"> <label>Enter
+				Category</label><input type="text" name="category"> <label>Enter
+				Price</label><input type="text" name="price"> <label>Active</label><select
+				name="active">
+				<option>Yes</option>
+				<option>No</option>
+			</select>
+		</div>
+	</div>
+</body>
+</html>
+<%@include file="../footer.jsp"%>

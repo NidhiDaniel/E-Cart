@@ -1,0 +1,22 @@
+<%@page import="com.db.connection.DAOConnection"%>
+<%@page import="java.sql.*"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+String id=request.getParameter("id");
+String name=request.getParameter("name");
+String category=request.getParameter("category");
+String price=request.getParameter("price");
+String active=request.getParameter("active");
+Connection con=DAOConnection.getConnection();
+PreparedStatement ps=con.prepareStatement("update products set name='"+name+"',catergory='"+category+"',price='"+price+"'")
+%>
+</body>
+</html>

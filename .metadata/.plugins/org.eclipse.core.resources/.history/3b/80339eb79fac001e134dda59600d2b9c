@@ -1,0 +1,10 @@
+@charset "ISO-8859-1";
+.product-view {
+	background: #f5f5f5;
+}
+.product-view table {
+	width: -webkit-fill-available;
+}
+.product-view table tr{
+	text-align: center;
+}

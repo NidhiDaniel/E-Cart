@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@include file="adminheader.jsp"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/admin-product.css">
+</head>
+<body>
+	<div class="product-container">
+		<div class="product-form">
+		    <form action="" method="post">
+		    <pre>
+			<label>Enter Name</label><br>
+			<input type="text" name="name"> 
+			<label>Enter Category</label><br>
+			<input type="text" name="category"> 
+			<label>Enter Price</label><br>
+			<input type="text" name="price">
+			<label>Active</label><br>
+			<select name="active">
+				<option>Yes</option>
+				<option>No</option>
+			</select><br>
+			<input type="submit" value="Add New Product">
+			</pre>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+<%@include file="../footer.jsp"%>

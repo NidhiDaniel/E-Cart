@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="./css/header.css">
+</head>
+<body>
+	<div class="header">
+	<% String email=session.getAttribute("email").toString(); %>
+	   
+	   <h3>Online Shopping</h3>
+	   <h2><a href=""><% out.println(email); %><i class="fa fa-user-alt"></i></a></h2>
+		<ul>
+			<li><a href="home.jsp">Home<i class="fa fa-institution"></i></a></li>
+			<li><a href="">My Cart<i class="fa fa-cart-arrow-down"></i></a></li>
+			<li><a href="">My Orders<i class="fa fa-elementor"></i></a></li>
+			<li><a href="">Change Details<i class="fa fa-edit"></i></a></li>
+			<li><a href="">Message Us<i class="fas fa-comment-alt"></i></a></li>
+			<li><a href="">About<i class="fas fa-address-book"></i></a></li>
+			<li><a href="">Logout<i class="fa fa-add"></i></a></li>
+		</ul>
+        <div class="search-container">
+        	<i class="fa fa-search"></i>
+        </div>
+	</div>
+</body>
+</html>

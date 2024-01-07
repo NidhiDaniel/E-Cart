@@ -1,0 +1,15 @@
+package com.db.connection;
+
+import java.sql.DriverManager;
+
+import com.mysql.cj.jdbc.Driver;
+
+public class DAOConnection {
+   public static void getConnection() {
+	   try {
+		DriverManager.registerDriver(new Driver());
+	} catch (Exception e) {
+		// TODO: handle exception
+	}
+   }
+}

@@ -1,0 +1,25 @@
+<%@page import="com.db.connection.DAOConnection"%>
+<%@page import="java.sql.*"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+
+String newPassword=request.getParameter("new-password");
+try{
+	Connection con=DAOConnection.getConnection();
+	PreparedStatement stmt=con.prepareStatement("update signup_table set password='"+newPassword+"'");
+	
+}
+catch(Exception e){
+	
+}
+%>
+</body>
+</html>

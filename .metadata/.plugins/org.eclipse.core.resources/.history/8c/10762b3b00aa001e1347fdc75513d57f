@@ -1,0 +1,10 @@
+*{
+	font-family: sans-serif;
+}
+body{
+	background: #00ACC1;
+}
+.container{
+	width:50%;
+	background: #F5F5F5;
+}

@@ -1,0 +1,47 @@
+<%@page import="com.db.connection.DAOConnection"%>
+<%@page import="java.sql.*"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@include file="adminheader.jsp"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h3 style="color: white; text-align: center;">All Products & Edit
+		Products</h3>
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>NAME</th>
+			<th>CATEGORY</th>
+			<th>PRICE</th>
+			<th>ACTIVE</th>
+		</tr>
+		<%
+	try {
+		String id = request.getParameter("id");
+		Connection con = DAOConnection.getConnection();
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery("select * from product where id=" + id);
+		while(rs.next()){%>
+		<tr>
+			<td><% rs.getInt(1);%></td>
+			<td><% rs.getString(2);%></td>
+			<td><%rs.getString(3);%></td>
+			<td><%rs.getDouble(4);%></td>
+			<td><% rs.getString(5);%></td>
+		</tr>
+		<%}
+	} catch (Exception e) {
+
+	}
+	%>
+	</table>
+
+</body>
+<%@include file="../footer.jsp"%>
+</html>

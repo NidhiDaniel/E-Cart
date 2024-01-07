@@ -1,0 +1,28 @@
+<%@page import="java.sql.*"%>
+<%@page import="com.db.connection.DAOConnection"%>
+<%@ page language="j
+Sava" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+String name=request.getParameter("name");
+String category=request.getParameter("category");
+String price=request.getParameter("price");
+String active=request.getParameter("active");
+try{
+	Connection con=DAOConnection.getConnection();
+	PreparedStatement ps=con.prepareStatement("inert into product(name,category,price,active) values(?,?,?,?)");
+	ps.executeUpdate();
+}
+catch(Exception e){
+	
+}
+%>
+</body>
+</html>
